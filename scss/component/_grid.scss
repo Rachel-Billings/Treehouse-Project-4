@@ -1,0 +1,131 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+@use '../utilities/variables';
+
+
+
+
+
+.container {
+    padding: 0 10px;
+    @media (min-width: variables.$break-l) {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+    @media (min-width: variables.$break-l) {
+      flex-direction: row;
+    }
+  }
+  
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    @media (min-width: variables.$break-l) {
+      display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+    }
+  }
+  
+  .theme.col-1 {
+    background-color: variables.$theme-col-1;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 8.33%;
+    }
+  }
+  
+  .theme.col-2 {
+    background-color: variables.$theme-col-2;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 16.67%;
+    }
+  }
+  
+  .theme.col-3 {
+    background-color: variables.$theme-col-3;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 25.00%;
+    }
+  }
+  
+  .theme.col-4 {
+    background-color: variables.$theme-col-4;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 33.33%;
+    }
+  }
+  
+  .theme.col-5 {
+    background-color: variables.$theme-col-5;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 41.67%;
+    }
+  }
+  
+  .theme.col-6 {
+    background-color: variables.$theme-col-6;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 50.00%;
+    }
+  }
+  
+  .theme.col-7 {
+    background-color: variables.$theme-col-7;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 58.33%;
+    }
+  }
+  
+  .theme.col-8 {
+    background-color: variables.$theme-col-8;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 66.67%;
+    }
+  }
+  
+  .theme.col-9 {
+    background-color: variables.$theme-col-9;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 75.00%
+    }
+  }
+  
+  .theme.col-10 {
+    background-color: variables.$theme-col-10;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 83.33%;
+      
+    }
+  }
+  
+  .theme.col-11 {
+    background-color: variables.$default;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 91.67%;
+    }
+  }
+  
+  .theme.col-12 {
+    background-color: variables.$theme-col-12;
+    @media (min-width: variables.$break-l) {
+      flex-basis: 100%;
+    }
+  }
+  
+  .card {
+    flex-basis: 100%;
+  }

@@ -1,0 +1,61 @@
+@use '../utilities/variables';
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+@media (min-width: variables.$break-l) {
+  
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  
+  
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+  
+}
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @media (min-width: variables.$break-l) {
+      padding: 10px 30px;
+      margin-left: 10px;
+    }
+  }
+  
+  .default {
+    background-color:  variables.$default;
+
+  }
+  
+  .error {
+    background-color: variables.$error;
+  }
+  
+  .info {
+    background-color: variables.$info;
+  }
+  
+  .success {
+    background-color: variables.$success;
+  }
+  
+  .warning {
+    background-color: variables.$warning;
+  }
+  

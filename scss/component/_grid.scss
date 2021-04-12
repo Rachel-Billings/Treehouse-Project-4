@@ -2,7 +2,7 @@
 /*              Grid System                      */
 /* ============================================= */
 
-@use '../utilities/variables';
+@use '..//utilities/variables';
 
 
 
@@ -41,86 +41,110 @@
     }
   }
   
-  .theme.col-1 {
-    background-color: variables.$theme-col-1;
+  .col-1 {
+    &.theme {
+      background-color: variables.$theme-col-1;
+    }
     @media (min-width: variables.$break-l) {
       flex-basis: 8.33%;
     }
   }
   
-  .theme.col-2 {
-    background-color: variables.$theme-col-2;
+  .col-2 {
+    &.theme {
+      background-color: variables.$theme-col-2;
+    }
     @media (min-width: variables.$break-l) {
       flex-basis: 16.67%;
     }
   }
   
-  .theme.col-3 {
+ .col-3 {
+  &.theme {
     background-color: variables.$theme-col-3;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 25.00%;
     }
   }
   
-  .theme.col-4 {
+ .col-4 {
+  &.theme {
     background-color: variables.$theme-col-4;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 33.33%;
     }
   }
   
-  .theme.col-5 {
-    background-color: variables.$theme-col-5;
+  .col-5 {
+    &.theme {
+      background-color: variables.$theme-col-5;
+    }
     @media (min-width: variables.$break-l) {
       flex-basis: 41.67%;
     }
   }
   
-  .theme.col-6 {
+ .col-6 {
+  &.theme {
     background-color: variables.$theme-col-6;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 50.00%;
     }
   }
   
-  .theme.col-7 {
+.col-7 {
+  &.theme {
     background-color: variables.$theme-col-7;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 58.33%;
     }
   }
   
-  .theme.col-8 {
+.col-8 {
+  &.theme {
     background-color: variables.$theme-col-8;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 66.67%;
     }
   }
   
-  .theme.col-9 {
+.col-9 {
+  &.theme {
     background-color: variables.$theme-col-9;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 75.00%
     }
   }
   
-  .theme.col-10 {
+.col-10 {
+  &.theme {
     background-color: variables.$theme-col-10;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 83.33%;
       
     }
   }
   
-  .theme.col-11 {
+.col-11 {
+  &.theme {
     background-color: variables.$default;
+  }
     @media (min-width: variables.$break-l) {
       flex-basis: 91.67%;
     }
   }
   
-  .theme.col-12 {
-    background-color: variables.$theme-col-12;
+  .col-12 {
+    &.theme {
+      background-color: variables.$theme-col-12;
+    }
     @media (min-width: variables.$break-l) {
       flex-basis: 100%;
     }
